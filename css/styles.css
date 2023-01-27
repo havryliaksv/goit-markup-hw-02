@@ -1,7 +1,6 @@
 :root {
   --accent-color: #404bbf;
   --header-logo-color: #4d5ae5;
-  --header-link-color: #2e2f42;
   --header-logo-end-color: #2e2f42;
   --header-link-color: #2e2f42;
   --contact-link-color: #434455;
@@ -20,6 +19,7 @@
   --btn-color: #4d5ae5;
   --btn-background-color: #f4f4fd;
   --btn-accent-color: #ffffff;
+  --btn-projects-border-color: #e7e9fc;
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -32,21 +32,15 @@ body {
   list-style: none;
 }
 .btn {
-  font-family: inherit, sans serif;
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
-  color: var(--btn-color);
-  background: var(--btn-background-color);
   cursor: pointer;
-}
-.btn:hover,
-.btn:focus {
-  background: var(--accent-color);
-  color: var(--btn-accent-color);
+  border: none;
 }
 .visually-hidden {
   position: absolute;
@@ -134,15 +128,8 @@ body {
   color: var(--hero-title-color);
 }
 .hero-btn {
-  font-family: inherit, sans serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  align-items: center;
-  letter-spacing: 0.04em;
   color: var(--hero-btn-color);
   background: var(--hero-background-btn-color);
-  cursor: pointer;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -199,6 +186,7 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
 }
+/*--------------------PROJECTS-------------------------*/
 .projects-subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -210,4 +198,15 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+.projects-btn {
+  background: var(--btn-background-color);
+  color: var(--btn-color);
+  border: 1px solid var(--btn-projects-border-color);
+  border-radius: 4px;
+}
+.projects-btn:hover,
+.projects-btn:focus {
+  background: var(--accent-color);
+  color: var(--btn-accent-color);
 }
